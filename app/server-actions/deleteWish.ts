@@ -19,7 +19,7 @@ export async function deleteWish(formData: any) {
   }
 
   const { error } = await supabase
-    .from('Wishes')
+    .from('wishlist')
     .delete()
     .match({ id: wishId, user_id: user.id });
 

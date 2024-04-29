@@ -20,7 +20,7 @@ export async function addWish(formData: any) {
     return;
   }
 
-  const { data, error } = await supabase.from('wishes').insert([
+  const { data, error } = await supabase.from('wishlist').insert([
     {
       title,
       brand,

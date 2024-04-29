@@ -22,7 +22,7 @@ export async function updateWish(formData: any) {
   }
 
   const { data, error } = await supabase
-    .from('wishes')
+    .from('wishlist')
     .update({
       title,
       brand,

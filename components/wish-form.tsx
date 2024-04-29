@@ -1,4 +1,5 @@
 import { addWish } from '@/app/server-actions/addWish';
+import { Button } from './ui/button';
 
 export default function WishForm() {
   return (
@@ -16,13 +17,13 @@ export default function WishForm() {
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="model" className="block text-white mb-2">
+        <label htmlFor="title" className="block text-white mb-2">
           Title
         </label>
         <input
           type="text"
-          id="model"
-          name="model"
+          id="title"
+          name="title"
           className="shadow appearance-none border border-gray-600 bg-gray-700 rounded w-full py-2 px-3 text-white"
           required
         />
@@ -38,12 +39,12 @@ export default function WishForm() {
           className="shadow appearance-none border border-gray-600 bg-gray-700 rounded w-full py-2 px-3 text-white"
         />
       </div>
-      <button
+      <Button
         type="submit"
         className="bg-gray-600 hover:bg-gray-300 text-white hover:text-black font-bold py-2 px-4 rounded"
       >
         Add Wish
-      </button>
+      </Button>
     </form>
   );
 }

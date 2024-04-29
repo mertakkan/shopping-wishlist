@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { updateWish } from '@/app/server-actions/updateWish';
+import { Button } from './ui/button';
 
 export default function EditWish({ wish }: any) {
   const [showModal, setShowModal] = useState(false);
@@ -16,12 +17,12 @@ export default function EditWish({ wish }: any) {
 
   return (
     <div>
-      <button
+      <Button
         onClick={() => setShowModal(true)}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       >
         Edit
-      </button>
+      </Button>
       {showModal && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center px-4">
           <div className="modal-content bg-gray-900 p-6 rounded-lg w-full max-w-md">
@@ -52,12 +53,12 @@ export default function EditWish({ wish }: any) {
               </div>
               <div className="mb-4">
                 <label htmlFor="title" className="block text-gray-300 mb-2">
-                  title
+                  Title
                 </label>
                 <input
                   type="text"
-                  id="model"
-                  name="model"
+                  id="title"
+                  name="title"
                   value={formData.title}
                   onChange={handleChange}
                   className="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:border-blue-500"
@@ -65,7 +66,7 @@ export default function EditWish({ wish }: any) {
               </div>
               <div className="mb-4">
                 <label htmlFor="url" className="block text-gray-300 mb-2">
-                  Reference Number
+                  URL
                 </label>
                 <input
                   type="text"
@@ -76,12 +77,12 @@ export default function EditWish({ wish }: any) {
                   className="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:border-blue-500"
                 />
               </div>
-              <button
+              <Button
                 type="submit"
                 className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Update wish
-              </button>
+              </Button>
             </form>
           </div>
         </div>
