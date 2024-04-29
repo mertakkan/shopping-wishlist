@@ -3,14 +3,14 @@ import AuthForm from '@/components/auth-form';
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen bg-gray-900 text-gray-300">
-      <div className="container mx-auto p-6 sm:p-12">
+      <div className="container mx-auto p-6 sm:p-12 space-y-10">
         <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6">
-          Welcome to Watch List
+          Welcome to Wish List
         </h1>
         <p className="text-lg md:text-xl text-white mb-6">
           Your personal space to curate and manage a wishlist of your favorite
-          watches. Sign in to create, view, edit, and delete items from your
-          watchlist.
+          shopping items of any kind. Sign in to create, view, edit, and delete
+          items from your wishlist.
         </p>
         <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
           <AuthForm />
