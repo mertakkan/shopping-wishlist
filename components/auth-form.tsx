@@ -17,8 +17,9 @@ export default function AuthForm() {
       appearance={{
         theme: ThemeSupa,
         style: {
-          button: { background: 'black' },
+          button: { background: 'black', borderRadius: '10px' },
           label: { color: 'black' },
+          input: { borderRadius: '10px' },
         },
       }}
       theme="dark"

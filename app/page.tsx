@@ -15,7 +15,7 @@ export default function Home() {
           shopping items of any kind. Sign in to create, view, edit, and delete
           items from your wishlist.
         </p>
-        <div className="bg-yellow-400 p-6 rounded-lg shadow-lg">
+        <div className="bg-green-400/90 p-6 rounded-lg shadow-lg">
           <AuthForm />
         </div>
       </div>
